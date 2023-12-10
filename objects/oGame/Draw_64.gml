@@ -1,0 +1,1 @@
+draw_sprite(spr_player_hud, 0, 0, 144);
