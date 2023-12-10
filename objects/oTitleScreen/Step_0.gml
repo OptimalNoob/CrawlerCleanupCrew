@@ -15,6 +15,14 @@ if(keyboard_check_pressed(vk_space)) {
 		room_goto(rmDev);
 	} else {
 		// TODO: Resume level from save file.
+		if(!instance_exists(oGame)) {
+			instance_create_layer(0, 0, "system", oGame);
+		}
 		room_goto(rmDev);
 	}
+}
+
+if(global.existing_save && keyboard_check_pressed(vk_f4)) {
+	file_delete("savegame.ini");
+	global.existing_save = false;
 }

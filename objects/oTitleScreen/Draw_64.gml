@@ -12,6 +12,9 @@ draw_text_transformed(gui_w / 2, gui_h / 3, "Crawler\nCleanup\nCrew", 1.0, 1.0, 
 draw_set_font(fntMain);
 if(global.existing_save) {
 	draw_text(gui_w / 2, gui_h - 48, "Space to continue...");
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_bottom);
+	draw_text(8, gui_h - 8, "F4 - Delete Save");
 } else {
 	draw_text(gui_w / 2, gui_h - 48, "Space to begin...");
 }

@@ -18,7 +18,8 @@ instance_create_layer(x, y, "system", oCamera);
 enum PlayerState {
 	IDLE,
 	WALK,
-	ATTACK
+	ATTACK,
+	IN_INV
 }
 
 function set_sprite(spr_index) {

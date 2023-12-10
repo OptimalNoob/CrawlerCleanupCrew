@@ -3,6 +3,8 @@ inpRight = keyboard_check(ord("D")) || keyboard_check(vk_right);
 inpUp = keyboard_check(ord("W")) || keyboard_check(vk_up);
 inpDown = keyboard_check(ord("S")) || keyboard_check(vk_down);
 
+inpInventory = keyboard_check_pressed(ord("I")) || keyboard_check_pressed(vk_tab);
+
 inpAttack = keyboard_check_pressed(vk_space);
 
 move_x = inpRight - inpLeft;
@@ -12,6 +14,7 @@ switch(state) {
 	case PlayerState.IDLE:
 		if(move_x != 0 || move_y != 0) set_state(PlayerState.WALK);
 		if(inpAttack) set_state(PlayerState.ATTACK);
+		if(inpInventory) set_state(PlayerState.IN_INV);
 		break;
 	case PlayerState.WALK:
 		if(move_x != 0) {
@@ -19,10 +22,14 @@ switch(state) {
 		}
 		if(move_x == 0 && move_y == 0) set_state(PlayerState.IDLE);
 		if(inpAttack) set_state(PlayerState.ATTACK);
+		if(inpInventory) set_state(PlayerState.IN_INV);
 		break;
 	case PlayerState.ATTACK:
 		move_x = 0;
 		move_y = 0;
+		break;
+	case PlayerState.IN_INV:
+	global.paused = true;
 		break;
 	default:
 		break;

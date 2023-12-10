@@ -41,8 +41,9 @@ switch(state) {
 			set_state(PlayerState.IDLE);
 		}
 		break;
+	case PlayerState.IN_INV:
+		break;
 	default:
 		break;
 }
-
 draw_self();
