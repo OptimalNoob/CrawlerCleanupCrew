@@ -32,7 +32,7 @@ ini_close(); // closing "savegame.ini"
 
 // Apply Display Settings
 display_set_gui_size(global.resolution_width, global.resolution_height);
-surface_resize(application_surface, global.resolution_width, global.resolution_height - 36);
+surface_resize(application_surface, global.resolution_width, global.resolution_height);
 
 if(global.window_fullscreen) {
 	window_set_fullscreen(true);
