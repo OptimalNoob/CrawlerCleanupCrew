@@ -18,8 +18,8 @@
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"background","animationFPS":15.0,"animationSpeedType":0,"colour":4282133831,"depth":400,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "parent": {
-    "name": "dungeon_easy_a",
-    "path": "folders/rooms/dungeons_easy/dungeon_easy_a.yy",
+    "name": "dungeon_easy_b",
+    "path": "folders/rooms/dungeons_easy/dungeon_easy_b.yy",
   },
   "parentRoom": null,
   "physicsSettings": {
