@@ -5,31 +5,52 @@ inpDown = keyboard_check(ord("S")) || keyboard_check(vk_down);
 
 inpInventory = keyboard_check_pressed(ord("I")) || keyboard_check_pressed(vk_tab);
 
-inpAttack = keyboard_check_pressed(vk_space);
-
-move_x = inpRight - inpLeft;
-move_y = inpDown - inpUp;
-
 switch(state) {
 	case PlayerState.IDLE:
+		inpAttack = keyboard_check_pressed(vk_space);
+		move_x = inpRight - inpLeft;
+		move_y = inpDown - inpUp;
 		if(move_x != 0 || move_y != 0) set_state(PlayerState.WALK);
 		if(inpAttack) set_state(PlayerState.ATTACK);
-		if(inpInventory) set_state(PlayerState.IN_INV);
+		if(inpInventory) {
+			prev_sprite = sprite_index;
+			inpInventory = false;
+			set_state(PlayerState.IN_INV);
+		}
 		break;
 	case PlayerState.WALK:
+		inpAttack = keyboard_check_pressed(vk_space);
+		move_x = inpRight - inpLeft;
+		move_y = inpDown - inpUp;
 		if(move_x != 0) {
 			image_xscale = move_x;
 		}
 		if(move_x == 0 && move_y == 0) set_state(PlayerState.IDLE);
 		if(inpAttack) set_state(PlayerState.ATTACK);
-		if(inpInventory) set_state(PlayerState.IN_INV);
+		if(inpInventory) {
+			prev_sprite = sprite_index;
+			inpInventory = false;
+			set_state(PlayerState.IN_INV);
+		}
 		break;
 	case PlayerState.ATTACK:
+		inpAttack = false;
 		move_x = 0;
 		move_y = 0;
 		break;
 	case PlayerState.IN_INV:
-	global.paused = true;
+		global.pause = true;
+		if(!instance_exists(oInventory)) {
+			instance_create_layer(0, 0, "system", oInventory);
+		} else if(inpInventory) {
+			global.pause = false;
+			instance_destroy(oInventory);
+			inpInventory = false;
+			set_sprite(prev_sprite);
+			set_state(PlayerState.IDLE);
+		}
+		move_x = 0;
+		move_y = 0;
 		break;
 	default:
 		break;

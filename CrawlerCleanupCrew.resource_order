@@ -1,5 +1,6 @@
 {
   "FolderOrderSettings": [
+    {"name":"(system)","order":7,"path":"folders/(system).yy",},
     {"name":"fonts","order":6,"path":"folders/fonts.yy",},
     {"name":"objects","order":5,"path":"folders/objects.yy",},
     {"name":"(system)","order":2,"path":"folders/objects/(system).yy",},
@@ -35,11 +36,13 @@
     {"name":"rm_dungeon_easy_b_4","order":2,"path":"rooms/rm_dungeon_easy_b_4/rm_dungeon_easy_b_4.yy",},
     {"name":"oInitGame","order":1,"path":"objects/oInitGame/oInitGame.yy",},
     {"name":"spr_interact_button_e","order":1,"path":"sprites/spr_interact_button_e/spr_interact_button_e.yy",},
+    {"name":"spr_inventory_ui","order":2,"path":"sprites/spr_inventory_ui/spr_inventory_ui.yy",},
     {"name":"rm_dungeon_easy_a_4","order":3,"path":"rooms/rm_dungeon_easy_a_4/rm_dungeon_easy_a_4.yy",},
     {"name":"s_chest_legendary","order":4,"path":"sprites/s_chest_legendary/s_chest_legendary.yy",},
     {"name":"rmTitle","order":3,"path":"rooms/rmTitle/rmTitle.yy",},
     {"name":"s_player_attack_front","order":2,"path":"sprites/s_player_attack_front/s_player_attack_front.yy",},
     {"name":"rm_dungeon_easy_a_1","order":4,"path":"rooms/rm_dungeon_easy_a_1/rm_dungeon_easy_a_1.yy",},
+    {"name":"ds_grid_create_from_array","order":1,"path":"scripts/ds_grid_create_from_array/ds_grid_create_from_array.yy",},
     {"name":"s_chest_uncommon","order":1,"path":"sprites/s_chest_uncommon/s_chest_uncommon.yy",},
     {"name":"rm_dungeon_easy_c_2","order":1,"path":"rooms/rm_dungeon_easy_c_2/rm_dungeon_easy_c_2.yy",},
     {"name":"oChestMagic","order":3,"path":"objects/oChestMagic/oChestMagic.yy",},
@@ -55,6 +58,7 @@
     {"name":"rm_dungeon_easy_a_2","order":1,"path":"rooms/rm_dungeon_easy_a_2/rm_dungeon_easy_a_2.yy",},
     {"name":"rm_dungeon_easy_a_3","order":2,"path":"rooms/rm_dungeon_easy_a_3/rm_dungeon_easy_a_3.yy",},
     {"name":"oChestLegendary","order":5,"path":"objects/oChestLegendary/oChestLegendary.yy",},
+    {"name":"oInventory","order":4,"path":"objects/oInventory/oInventory.yy",},
     {"name":"rmTemplate","order":4,"path":"rooms/rmTemplate/rmTemplate.yy",},
   ],
 }

@@ -42,6 +42,9 @@ switch(state) {
 		}
 		break;
 	case PlayerState.IN_INV:
+		set_sprite(s_player_move_front);
+		image_speed = 0;
+		image_index = 0;
 		break;
 	default:
 		break;

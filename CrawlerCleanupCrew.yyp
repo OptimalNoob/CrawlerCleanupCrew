@@ -11,6 +11,7 @@
   },
   "defaultScriptType": 1,
   "Folders": [
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"(system)","folderPath":"folders/(system).yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"fonts","folderPath":"folders/fonts.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"objects","folderPath":"folders/objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"(system)","folderPath":"folders/objects/(system).yy",},
@@ -59,6 +60,7 @@
     {"id":{"name":"oInitGame","path":"objects/oInitGame/oInitGame.yy",},},
     {"id":{"name":"s_player_move_front","path":"sprites/s_player_move_front/s_player_move_front.yy",},},
     {"id":{"name":"spr_interact_button_e","path":"sprites/spr_interact_button_e/spr_interact_button_e.yy",},},
+    {"id":{"name":"spr_inventory_ui","path":"sprites/spr_inventory_ui/spr_inventory_ui.yy",},},
     {"id":{"name":"rm_dungeon_easy_a_4","path":"rooms/rm_dungeon_easy_a_4/rm_dungeon_easy_a_4.yy",},},
     {"id":{"name":"s_chest_legendary","path":"sprites/s_chest_legendary/s_chest_legendary.yy",},},
     {"id":{"name":"s_items","path":"sprites/s_items/s_items.yy",},},
@@ -66,6 +68,8 @@
     {"id":{"name":"oCollider","path":"objects/oCollider/oCollider.yy",},},
     {"id":{"name":"s_player_attack_front","path":"sprites/s_player_attack_front/s_player_attack_front.yy",},},
     {"id":{"name":"rm_dungeon_easy_a_1","path":"rooms/rm_dungeon_easy_a_1/rm_dungeon_easy_a_1.yy",},},
+    {"id":{"name":"ds_grid_create_from_array","path":"scripts/ds_grid_create_from_array/ds_grid_create_from_array.yy",},},
+    {"id":{"name":"_items","path":"scripts/_items/_items.yy",},},
     {"id":{"name":"s_chest_uncommon","path":"sprites/s_chest_uncommon/s_chest_uncommon.yy",},},
     {"id":{"name":"spr_heading_font","path":"sprites/spr_heading_font/spr_heading_font.yy",},},
     {"id":{"name":"rm_dungeon_easy_c_1","path":"rooms/rm_dungeon_easy_c_1/rm_dungeon_easy_c_1.yy",},},
@@ -87,6 +91,7 @@
     {"id":{"name":"rm_dungeon_easy_a_3","path":"rooms/rm_dungeon_easy_a_3/rm_dungeon_easy_a_3.yy",},},
     {"id":{"name":"oChestLegendary","path":"objects/oChestLegendary/oChestLegendary.yy",},},
     {"id":{"name":"rm_dungeon_easy_b_2","path":"rooms/rm_dungeon_easy_b_2/rm_dungeon_easy_b_2.yy",},},
+    {"id":{"name":"oInventory","path":"objects/oInventory/oInventory.yy",},},
     {"id":{"name":"rmTemplate","path":"rooms/rmTemplate/rmTemplate.yy",},},
   ],
   "RoomOrderNodes": [

@@ -26,3 +26,5 @@ if(global.existing_save && keyboard_check_pressed(vk_f4)) {
 	file_delete("savegame.ini");
 	global.existing_save = false;
 }
+
+if(keyboard_check(vk_escape)) game_end();

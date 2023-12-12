@@ -2,6 +2,8 @@ self.image_speed = 0;
 self.image_index = 0;
 
 self.state = PlayerState.IDLE;
+self.prev_sprite = sprite_index;
+
 
 self.xspeed = 0;
 self.yspeed = 0;

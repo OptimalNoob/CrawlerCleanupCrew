@@ -4,6 +4,7 @@ global.resolution_width = 320;
 global.resolution_height = 180;
 global.pause = false;
 
+_init_items();
 ///
 /// General Preferences .ini
 ///
@@ -20,7 +21,7 @@ ini_close(); // closing "pref.ini"
 ///
 /// Game Save Data .ini
 ///
-var _ini = ini_open("savegame.ini")
+_ini = ini_open("savegame.ini")
 global.existing_save = ini_read_real("session", "old_file", 0);
 global.player_health_max = ini_read_real("player", "max_health", 3);
 global.player_health = ini_read_real("player", "health", global.player_health_max);
