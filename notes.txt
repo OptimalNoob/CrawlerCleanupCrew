@@ -1,0 +1,56 @@
+Item Loot System
+- Choose how many items spawn.
+- Each item that spawns will be "rolled" using a random number gen.
+- Rarity will be determined by a percentage range that the random number falls on.
+- Randomly choose an item type, also based on a percentage range maybe.
+
+Random Number Generators:
+- Item Loot Quantity (x1 RNGs)
+    - Chests:
+        - Uncommon: 2 - 4
+        - Common: 1 - 5
+        - Magic: 2 - 6
+        - Rare: 2 - 7
+        - Legendary: 4 - 9
+    - Enemies:
+        - Easy: 1 - 3
+        - Medium: 3 - 5
+        - Hard: 2 - 6
+        - Boss: 5 - 11
+- Item Types and Subtypes and Specific Type & Item Rarity (x4 RNGs)
+    - Weapon (Uncommon - Legendary)
+        - Axes
+        - Bows
+        - Clubs
+        - Crossbows
+        - Daggers
+        - Guns
+        - Shields
+        - Staves
+        - Swords
+        - Throwables
+    - Armor (Uncommon - Legendary)
+        - Boots
+        - Gloves
+        - Helms
+        - Accessories
+        - Torsos
+    - Valuable (Uncommon)
+        - Valuables
+        - Jewelry
+        - Relics
+    - Usables (Uncommon - Common)
+        - Ammo
+        - Bags
+        - Foodstuff
+        - Keys
+        - Potions
+    - Junk (Uncommon)
+        - Junk
+- Item Name Decorators (Rarity of Magic or above)
+    - If Magic
+        - Prefix Decorator (1x RNG)
+    - If Rare
+        - Suffix Decorator (1x RNG)
+    - If Legendary
+        - Prefix & Suffix Decorator (2x RNGs)
