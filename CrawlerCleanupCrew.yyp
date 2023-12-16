@@ -82,7 +82,7 @@
     {"id":{"name":"ds_grid_create_from_array","path":"scripts/ds_grid_create_from_array/ds_grid_create_from_array.yy",},},
     {"id":{"name":"_items","path":"scripts/_items/_items.yy",},},
     {"id":{"name":"_item_name_dictionaries","path":"scripts/_item_name_dictionaries/_item_name_dictionaries.yy",},},
-    {"id":{"name":"_item_sprites","path":"scripts/_item_sprites/_item_sprites.yy",},},
+    {"id":{"name":"_item_sprite_map","path":"scripts/_item_sprite_map/_item_sprite_map.yy",},},
     {"id":{"name":"spr_items_foodstuff","path":"sprites/spr_items_foodstuff/spr_items_foodstuff.yy",},},
     {"id":{"name":"spr_items_axes","path":"sprites/spr_items_axes/spr_items_axes.yy",},},
     {"id":{"name":"s_chest_uncommon","path":"sprites/s_chest_uncommon/s_chest_uncommon.yy",},},

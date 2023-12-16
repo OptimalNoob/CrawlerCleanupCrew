@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "_item_sprites",
+  "name": "_item_sprite_map",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

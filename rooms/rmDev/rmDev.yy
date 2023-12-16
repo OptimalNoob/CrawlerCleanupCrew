@@ -23,6 +23,10 @@
     {"name":"inst_1F289BAB","path":"rooms/rmDev/rmDev.yy",},
     {"name":"inst_3A728B54","path":"rooms/rmDev/rmDev.yy",},
     {"name":"inst_7DC42FFE","path":"rooms/rmDev/rmDev.yy",},
+    {"name":"inst_6A0A28F2","path":"rooms/rmDev/rmDev.yy",},
+    {"name":"inst_17A4B6DB","path":"rooms/rmDev/rmDev.yy",},
+    {"name":"inst_6A12E923","path":"rooms/rmDev/rmDev.yy",},
+    {"name":"inst_4F7A9F62","path":"rooms/rmDev/rmDev.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -49,7 +53,11 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7DC42FFE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":24.0,"y":32.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"objects","depth":400,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3A728B54","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oChestCommon","path":"objects/oChestCommon/oChestCommon.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":168.0,"y":32.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3A728B54","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oChestCommon","path":"objects/oChestCommon/oChestCommon.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":72.0,"y":56.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6A0A28F2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oChestUncommon","path":"objects/oChestUncommon/oChestUncommon.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":136.0,"y":56.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_17A4B6DB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oChestMagic","path":"objects/oChestMagic/oChestMagic.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":48.0,"y":88.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6A12E923","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oChestRare","path":"objects/oChestRare/oChestRare.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":104.0,"y":88.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4F7A9F62","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oChestLegendary","path":"objects/oChestLegendary/oChestLegendary.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":88.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"tiles_back","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":32,"SerialiseWidth":32,"TileCompressedData":[
 1,73,-10,74,1,75,-20,-2147483648,1,94,-4,0,-6,-2147483648,1,96,-20,-2147483648,2,94,-2147483648,-4,0,-5,-2147483648,1,96,-20,-2147483648,2,94,-2147483648,

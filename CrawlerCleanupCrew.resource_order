@@ -56,7 +56,7 @@
     {"name":"rm_dungeon_easy_a_1","order":4,"path":"rooms/rm_dungeon_easy_a_1/rm_dungeon_easy_a_1.yy",},
     {"name":"ds_grid_create_from_array","order":1,"path":"scripts/ds_grid_create_from_array/ds_grid_create_from_array.yy",},
     {"name":"_item_name_dictionaries","order":2,"path":"scripts/_item_name_dictionaries/_item_name_dictionaries.yy",},
-    {"name":"_item_sprites","order":3,"path":"scripts/_item_sprites/_item_sprites.yy",},
+    {"name":"_item_sprite_map","order":3,"path":"scripts/_item_sprite_map/_item_sprite_map.yy",},
     {"name":"spr_items_foodstuff","order":23,"path":"sprites/spr_items_foodstuff/spr_items_foodstuff.yy",},
     {"name":"spr_items_axes","order":9,"path":"sprites/spr_items_axes/spr_items_axes.yy",},
     {"name":"s_chest_uncommon","order":1,"path":"sprites/s_chest_uncommon/s_chest_uncommon.yy",},

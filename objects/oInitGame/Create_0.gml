@@ -49,3 +49,5 @@ global.fntHeading = font_add_sprite_ext(
 	false,
 	0
 );
+
+randomize();

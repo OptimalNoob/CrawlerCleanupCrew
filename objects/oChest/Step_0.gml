@@ -6,4 +6,7 @@ if(!global.pause && !opened && collision_circle(x, y - sprite_height / 2, sprite
 
 if(self.can_interact && keyboard_check_pressed(ord("E"))) {
 	self.opened = true;
+	self.generated_loot = generate_chest_loot(self.rarity);
+	alarm[0] = 240;
+	self.debug_drawing = true;
 }
