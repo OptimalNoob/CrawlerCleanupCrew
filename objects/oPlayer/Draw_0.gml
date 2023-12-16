@@ -41,7 +41,7 @@ switch(state) {
 			set_state(PlayerState.IDLE);
 		}
 		break;
-	case PlayerState.IN_INV:
+	case PlayerState.IN_INV: case PlayerState.IN_LOOT:
 		set_sprite(s_player_move_front);
 		image_speed = 0;
 		image_index = 0;

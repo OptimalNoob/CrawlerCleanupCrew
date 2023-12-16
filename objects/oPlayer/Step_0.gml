@@ -7,7 +7,7 @@ inpInventory = keyboard_check_pressed(ord("I")) || keyboard_check_pressed(vk_tab
 
 switch(state) {
 	case PlayerState.IDLE:
-		inpAttack = keyboard_check_pressed(vk_space);
+		inpAttack = keyboard_check_pressed(vk_space) || mouse_check_button_pressed(mb_left);
 		move_x = inpRight - inpLeft;
 		move_y = inpDown - inpUp;
 		if(move_x != 0 || move_y != 0) set_state(PlayerState.WALK);
@@ -19,7 +19,7 @@ switch(state) {
 		}
 		break;
 	case PlayerState.WALK:
-		inpAttack = keyboard_check_pressed(vk_space);
+		inpAttack = keyboard_check_pressed(vk_space) || mouse_check_button_pressed(mb_left);
 		move_x = inpRight - inpLeft;
 		move_y = inpDown - inpUp;
 		if(move_x != 0) {
@@ -49,6 +49,11 @@ switch(state) {
 			set_sprite(prev_sprite);
 			set_state(PlayerState.IDLE);
 		}
+		move_x = 0;
+		move_y = 0;
+		break;
+	case PlayerState.IN_LOOT:
+		global.pause = true;
 		move_x = 0;
 		move_y = 0;
 		break;

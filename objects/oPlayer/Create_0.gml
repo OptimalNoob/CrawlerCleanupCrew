@@ -15,13 +15,18 @@ self.health = global.player_health;
 self.look_dir = 0; // 0-right | 1-down | 2-left | 3-up, for attacks
 self.attacking = false;
 
+if(instance_exists(oInventory)) instance_destroy(oInventory);
+if(instance_exists(oLootMenu)) instance_destroy(oLootMenu);
+global.pause = false;
+
 instance_create_layer(x, y, "system", oCamera);
 
 enum PlayerState {
 	IDLE,
 	WALK,
 	ATTACK,
-	IN_INV
+	IN_INV,
+	IN_LOOT
 }
 
 function set_sprite(spr_index) {

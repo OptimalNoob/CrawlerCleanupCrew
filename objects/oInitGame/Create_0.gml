@@ -4,7 +4,6 @@ global.resolution_width = 320;
 global.resolution_height = 180;
 global.pause = false;
 
-_init_items();
 ///
 /// General Preferences .ini
 ///
