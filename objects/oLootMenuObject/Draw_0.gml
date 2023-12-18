@@ -37,5 +37,5 @@ if(self.hovered) {
 	draw_set_color(c_white);
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);
-	draw_text(ui_anchx + 38, ui_anchy + 38, item_data.item_name);
+	draw_text(ui_anchx + 32, ui_anchy + 32, item_data.item_name);
 }

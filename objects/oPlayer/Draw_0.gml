@@ -38,6 +38,7 @@ switch(state) {
 		}
 		if(image_index >= image_number - 1) {
 			attacking = false;
+			self.can_attack = true;
 			set_state(PlayerState.IDLE);
 		}
 		break;

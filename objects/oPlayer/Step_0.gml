@@ -11,7 +11,10 @@ switch(state) {
 		move_x = inpRight - inpLeft;
 		move_y = inpDown - inpUp;
 		if(move_x != 0 || move_y != 0) set_state(PlayerState.WALK);
-		if(inpAttack) set_state(PlayerState.ATTACK);
+		if(inpAttack && self.can_attack) {
+			self.can_attack = false;
+			set_state(PlayerState.ATTACK);
+		}
 		if(inpInventory) {
 			prev_sprite = sprite_index;
 			inpInventory = false;

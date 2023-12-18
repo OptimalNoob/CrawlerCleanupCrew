@@ -3,7 +3,7 @@ self.image_index = 0;
 
 self.state = PlayerState.IDLE;
 self.prev_sprite = sprite_index;
-
+self.can_attack = true;
 
 self.xspeed = 0;
 self.yspeed = 0;

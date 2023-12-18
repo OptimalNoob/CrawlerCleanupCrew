@@ -60,7 +60,6 @@ function generate_chest_loot(_rarity) {
 	for(var i = 0; i < item_drop_count; i++) {
 		var _item_rarity = _pick_item_rarity(_rarity);
 		if(_item_rarity != ItemRarity.JUNK) {
-			if(_item_rarity == 5) show_debug_message("THIS SHOULDN'T BE APPEARING");
 			var _item_type = irandom_range(ItemType.ARMOR, ItemType.VALUABLE);
 			var _item_subtype = _pick_item_subtype(_item_type);
 			var _sprite_data = _pick_item_sprite_and_index(_item_type, _item_subtype);
@@ -86,11 +85,6 @@ function generate_chest_loot(_rarity) {
 			}
 		}
 		item_drops[i] = _item_out;
-		show_debug_message("Rarity: " + string(global.debug_item_rarity[_item_out.item_rarity]) + "(" + string(_item_out.item_rarity) + ")");
-		show_debug_message("Type: " + string(global.debug_item_type[_item_out.item_type]) + "(" + string(_item_out.item_type) + ")");
-		show_debug_message("SubType: " + string(global.debug_item_subtype[_item_out.item_subtype]) + "(" + string(_item_out.item_subtype) + ")");
-		show_debug_message("Name: " + string(_item_out.item_name));
-		show_debug_message("---");
 	}
 	return item_drops;
 }
@@ -151,7 +145,6 @@ function _pick_item_name(_subtype, _rarity) {
 	var _prefix = "";
 	var _suffix = "";
 	var _item_name_list = global.item_name_dictionary[_subtype];
-	show_debug_message("Name Pool: " + string(_item_name_list));
 	var _rand = irandom_range(0, array_length(_item_name_list) - 1);
 	var _base_name = _item_name_list[_rand];
 	switch(_rarity) {

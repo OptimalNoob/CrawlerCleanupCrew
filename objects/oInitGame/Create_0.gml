@@ -3,6 +3,7 @@ is_window_centered = false;
 global.resolution_width = 320;
 global.resolution_height = 180;
 global.pause = false;
+global.player_inventory = [];
 
 ///
 /// General Preferences .ini

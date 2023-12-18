@@ -4,3 +4,4 @@ self.hovered = false;
 self.has_entered = false;
 self.selected = false;
 self.item_data = {};
+self.callback_id = -1;
