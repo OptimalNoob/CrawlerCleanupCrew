@@ -16,3 +16,8 @@ if(self.can_interact && keyboard_check_pressed(ord("E"))) {
 	//alarm[0] = 240;
 	//self.debug_drawing = true;
 }
+
+if(instance_exists(oLootMenu)) {
+	oLootMenu.x = oCamera.x + (view_wport / 2);
+	oLootMenu.y = oCamera.y;
+}

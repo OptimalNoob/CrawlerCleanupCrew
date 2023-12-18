@@ -5,7 +5,7 @@ self.image_index = item_data.item_sprite_frame;
 var pad = 2;
 if(self.selected) {
 	draw_set_color(c_green);
-	draw_rectangle(x + pad, y + pad, x + (sprite_width - 1) - pad, y + (sprite_height - 1) - pad, true);
+	draw_rectangle(x + pad, y + pad, x + (sprite_width - 1) - pad, y + sprite_height - (pad + 1), true);
 	draw_set_color(c_white);
 }
 
@@ -32,8 +32,9 @@ switch(item_data.item_rarity) {
 
 draw_self();
 if(self.hovered) {
-	draw_set_color(c_orange);
-	draw_rectangle(x + pad, y + pad, x + (sprite_width - 1) - pad, y + (sprite_height - 1) - pad, true);
+	if(self.selected) draw_set_color(c_green);
+	else draw_set_color(c_orange);
+	draw_rectangle(x + pad, y + pad, x + (sprite_width - 1) - pad, y + sprite_height - (pad + 1), true);
 	draw_set_color(c_white);
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);
