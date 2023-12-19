@@ -44,7 +44,8 @@ switch(state) {
 	case PlayerState.IN_INV:
 		global.pause = true;
 		if(!instance_exists(oInventory)) {
-			instance_create_layer(0, 0, "system", oInventory);
+			var _menu = instance_create_layer(oCamera.x + (view_wport / 2), oCamera.y, "system", oInventory);
+			_menu.item_list = global.player_inventory;
 		} else if(inpInventory) {
 			global.pause = false;
 			instance_destroy(oInventory);
